@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header>
+        <h2 data-testid="test-user-name" class="user-name">Seye Victor</h2>
+      </header>
+      <figure class="avatar-section">
+        <img
+          src="/ProfileCard/download.jpg"
+          alt="Seye"
+          data-testid="test-user-avatar"
+          class="avatar"
+        />
+      </figure>
+      <section class="bio-section">
+        <p data-testid="test-user-bio" class="bio">
+          I'm a full Stack dev who loves crafting and creating Web Apps.
+        </p>
+        <p>
+          Current time (ms):
+          <span data-testid="test-user-time" id="user-time"></span>
+        </p>
+      </section>
+
+      <nav aria-label="Social Links">
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li>
+            <a
+              href="https://x.com/seye_victor4"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >X</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/seye2vans"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/seye-victor-olaleye-9a4820236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section aria-labelledby="hobbies-title">
+        <h3 id="hobbies-title">Hobbies</h3>
+        <ul data-testid="test-user-hobbies" class="list">
+          <li>Coding</li>
+          <li>Gaming</li>
+          <li>Reading</li>
+        </ul>
+      </section>
+      <section aria-labelledby="dislikes-title">
+        <h3 id="dislikes-title">Dislikes</h3>
+        <ul data-testid="test-user-dislikes" class="list">
+          <li>Slow internet</li>
+          <li>Unoptimized UIs</li>
+          <li>Cold coffee</li>
+        </ul>
+      </section>
+    </article>
+    <script src="scrpit.js"></script>
+  </body>
+</html>
